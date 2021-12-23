@@ -20,8 +20,6 @@ C = [0.00043779	0.00026550	0.00019285	0.00031725	0.00018550 ;
     0.00031725	0.00075885	0.00039300	0.00198140	0.00027545 ;
     0.00018550	0.00025462	0.00016367	0.00027545	0.00045380 ]
 
-
-
 PF_periksadata(C, 1.e-6) ;
 [alpha0, alpha1, beta0, beta2, h0, h1,] = PF_EFMVcoeff(mu, C)
 figure(1)
@@ -113,4 +111,3 @@ end
 %  xmarket = (C^-1*(mu-r*e11))/(e11'*C^-1*(mu-r*e11))
 %  returnmarket = mu'*xmarket
 %  sigmarket = sqrt(xmarket'*C*xmarket)
-% xgaje = [ -2.7090 -5.2579 2.2968 5.3687 0.3014 ]' 
